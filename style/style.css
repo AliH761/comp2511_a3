@@ -209,3 +209,49 @@ h2{
         margin-right: auto;
     }
 }
+
+
+/* form content start */
+.basicpost{
+    background-color: white;
+    border-style: ridge;
+    border-radius: 30px;  
+    padding: 18px;
+}
+
+.form{   
+    display: flex;
+    justify-content:center;
+    align-items:baseline;
+}
+
+form label{
+    font-weight:bolder;
+}
+
+
+form p{
+    font-weight: bolder;
+}
+
+.icons:after{
+    content: "(Required)";
+    color: red;
+}
+/* form content end */
+
+.footer{
+    
+}
+
+input:hover {
+  background-color: yellow;
+    cursor: pointer; 
+}
+
+
+@media screen and (max-width: 768px) {
+   .side {   
+       
+    }
+  }

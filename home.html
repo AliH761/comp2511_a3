@@ -33,6 +33,52 @@
                     </iframe>
                     <p>This web page was developed for displaying resumes<br></p>
                 </div>
+                <div  class="form">
+                    <main class = "basicpost">
+                        <form action="validate.html" method="get" enctype="text/plain">
+                            <!--Creating spaces-->
+                            &emsp;&emsp;&emsp;&emsp;
+
+                            <i class="icons"></i>
+                            <label>persons
+                                <input type="number" name="person" value="0" min="0" max="10" required/>
+                                <br>
+                            </label>
+                            <label> Subject:
+                                <input type="text" name="SubJect" placeholder="Subjects" maxlength="10" required><br>
+                            </label>
+                            <label> From:
+                                <input type="text" name="From" placeholder="From" maxlength="10" required><br>
+                            </label>
+                            <i class="icons"></i>
+                            <label for="inquiry">Message
+                                <textarea id="inquiry" name="inquiry" rows="4" cols="50" required>
+                                </textarea>
+                            </label>
+
+                            <label> Phone:
+                                <input type="tel" name="Phone Number" placeholder="123-123-1234" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" /><p>(optional)</p><br><br>
+                            </label>
+                            <p>Please select service:<p>
+
+                            <label>Phone
+                                <input type="radio" id="Phone" name="service" value="Phone">
+                            </label>
+
+                            <label>Email
+                                <input type="radio" id="Email" name="service2" value="Email">
+                            </label>
+                            <!--Creating spaces-->
+                            &emsp;&emsp;
+
+                            <input type="Send" value="Book">
+
+                            <!--Creating spaces-->
+                            &emsp;&emsp;
+                            <input type="reset" value="Clear">
+                        </form>
+                    </main>
+                </div>
             </div>
             <footer>
                 Assignment 3 Dec 2020 Khosro 
