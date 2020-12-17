@@ -1,0 +1,211 @@
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25px 25px 646px 25px;
+}
+
+/* header content start */
+
+
+#item1{    
+    grid-column: 1/5;
+    grid-row: 1;    
+    font-family: "Lucida Console", Courier, monospace;;
+    font-size: 25px;
+    text-align: center;
+    background-color: white;
+
+}
+
+#item2{
+    grid-row: 2;
+    grid-column: 1/5;
+    background-color: white;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.a:hover {
+    color: gray;
+    cursor: pointer;
+    padding-top: 5px;
+
+}
+
+.b:hover {
+    color: gray;
+    cursor: pointer;
+    padding-top: 5px;
+
+
+}
+
+/* header content end */
+
+/* main content start */
+#item3{
+    grid-row: 3;
+    grid-column: 1/5;
+    align-content: center;
+    background-color: whitesmoke;
+}
+
+
+/* main content end */
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#flex-container{  
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row; 
+}
+
+
+.flex-item{
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    padding-top: 5px;
+
+}
+
+.allnavcolor{
+    color: black;
+}
+
+
+
+/* footer content start */
+#flex-footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; 
+}
+
+.flex-foot-item{
+    display: inline;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    grid-row: 4;
+    grid-column: 1/5;
+
+}
+/* footer content end */
+
+/* contains food images */
+.container{
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px;  
+    background-color: white;
+    border-style: outset;
+    border-color: white;
+    padding: 10px;
+}
+
+
+
+/* effects images */
+.round{
+    width:200px;
+    height: 400px;
+    border-radius: 45%;
+}
+
+.boxmenu{
+    text-align: left;
+    height: 100px;
+    width:400px;
+
+}
+.boxmenu2{
+    text-align: left;
+    height: 200px;
+    width:800px;
+
+}
+
+h3{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+/* small breakpoint*/
+@media screen and (min-width:400px){
+    .element1, .element2, .element3, .element4, .element5{
+        width: 100%;
+    }
+    .elemens5{
+        height: auto;
+    }
+    .container{
+        width: 300px;
+
+    }
+    #wrapper{
+        grid-template-rows: 25px 25px 1090px 25px;    
+    }
+}
+
+/* medium breakpoint */
+@media screen and (min-width:600px){
+    .element1, .element2, .element3, .element4{
+        width: 50%;
+    }    
+    
+    .element5{
+        widows: 100%;
+    }
+    .container{
+        width: 800px;
+
+    }
+    #wrapper{
+        grid-template-rows: 25px 25px 646px 25px;
+    }
+}
+/* large breakpoint */
+@media screen and (min-width:850px){
+    .element1, .element2, .element3, .element4{
+        width: 50%;
+    }
+    .element5{
+        widows: 100%;
+    }
+    .container{
+        width: 800px;
+
+    }
+    #wrapper{
+        grid-template-rows: 25px 25px 655px 25px;
+    }
+}
+/* sets maxmium content size*/
+@media screen and (min-width:850px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
